@@ -12,9 +12,13 @@ Configure e otimize um servidor NGINX para atuar como servidor web, proxy revers
 Etapas
 
 a. Configuração Básica: Configure o NGINX para atuar como servidor web para um site ou aplicativo.
+
 b. Proxy Reverso: Configure regras de proxy reverso para direcionar o tráfego para diferentes serviços ou aplicativos.
+
 c. Segurança e HTTPS: Implemente HTTPS com certificados SSL/TLS e configure políticas de segurança.
+
 d. Otimização de Desempenho: Aplique técnicas de otimização para melhorar o desempenho do NGINX.
+
 e. Documentação: Documente a configuração e as decisões tomadas durante o projeto.
 
 
