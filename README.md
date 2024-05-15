@@ -1,4 +1,4 @@
-# Projeto-Pratico-Configuracao-e-Otimizacao-do-Servidor-NGINX
+# Projeto Prático Configuracão e Otimização do Servidor NGINX
 
 2º Projeto Prático - DevOps
 
