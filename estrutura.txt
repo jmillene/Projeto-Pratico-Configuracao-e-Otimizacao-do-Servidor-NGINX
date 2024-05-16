@@ -1,0 +1,16 @@
+/home/jessica-milene/Documentos/Projeto-Pratico-Configuracao-e-Otimizacao-do-Servidor-NGINX
+├── docker-compose.yaml
+├── erro
+│   ├── index.css
+│   ├── index.html
+│   └── index.js
+├── estrutura.txt
+├── html
+│   ├── index.html
+│   └── teste
+│       └── index.html
+├── nginx.conf
+├── README.md
+└── teste
+
+5 directories, 9 files

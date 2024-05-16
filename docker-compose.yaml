@@ -9,4 +9,3 @@ services:
     volumes:
       - ./nginx.conf:/etc/nginx/nginx.conf
       - ./html:/usr/share/nginx/html
-      - ./erro:/usr/share/nginx/erro
