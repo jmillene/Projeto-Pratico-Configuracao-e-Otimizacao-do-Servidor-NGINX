@@ -6,6 +6,10 @@ services:
     container_name: nginx_server
     ports:
       - "80:80"
+      - "8001:8001"
+      - "8002:8002"
     volumes:
-      - ./nginx.conf:/etc/nginx/nginx.conf
-      - ./html:/usr/share/nginx/html
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf
+      - ./nginx/html:/usr/share/nginx/html
+      - ./nginx/servidores/microservicos/microservicos.conf:/etc/nginx/microservicos.conf
+      - ./nginx/servidores/microservicos/html:/usr/share/nginx/microservicos/html
