@@ -12,4 +12,5 @@ services:
       - ./nginx/nginx.conf:/etc/nginx/nginx.conf
       - ./nginx/html:/usr/share/nginx/html
       - ./nginx/servidores/microservicos/microservicos.conf:/etc/nginx/microservicos.conf
-      - ./nginx/servidores/microservicos/html:/usr/share/nginx/microservicos/html
+      - ./nginx/servidores/microservicos/servico1/html:/usr/share/nginx/microservicos/servico1/html
+      - ./nginx/servidores/microservicos/servico2/html:/usr/share/nginx/microservicos/servico2/html
