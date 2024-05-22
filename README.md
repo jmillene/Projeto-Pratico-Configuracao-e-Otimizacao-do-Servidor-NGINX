@@ -33,13 +33,21 @@ Nginx
 
 ### 🔧 Instalação
 
-Uma série de exemplos passo-a-passo que informam o que você deve executar para ter um ambiente de desenvolvimento em execução.
+Siga estas etapas para configurar o ambiente de desenvolvimento:
 
-- Configurar o arquivo docker-compose para receber a imagem do servidor nginx para que possamos trabalhar com ele dentro do container.
-- Criar o arquivo de configuração do servidor ngnix.
-- Após todas as configuração suba o container usando o comando docker-compose -d-
-- Você pode verificar se o container está ativo usando o comando docker ps, esse comando listará todos os containers presentes no docker.
-- Vereifique se o servidor está ativo utilizando seu browser localhost:porta(digite aqui a porta utilizada).
+- Configure o arquivo docker-compose para receber a imagem do servidor nginx para que possamos trabalhar com ele dentro do container.
+- Crie o arquivo de configuração do servidor nginx.
+- Após todas as configurações, suba o container usando o comando: 
+
+```bash
+# Subindo container docker
+  docker-compose up -d
+  sudo apt-get install docker-ce
+´´
+# Você pode verificar se o container está ativo usando o comando:
+  docker ps
+Esse comando listará todos os containers presentes no Docker.
+Verifique se o servidor está ativo utilizando seu navegador e acessando localhost:porta (digite aqui a porta utilizada).
 
 ## 📦 Implantação
 
@@ -47,14 +55,14 @@ Adicione notas adicionais sobre como implantar isso em um sistema ativo
 
 ## 🛠️ Construído com
 
-Mencione as ferramentas que você usou para criar seu projeto
+## 🔧 Ferramentas utilizadas no projeto:
 
 * [Nginx](https://www.nginx.com/) - O servidor web usado
 * [Docker](https://www.docker.com/) - Software utilizado
 
 ## 🖇️ Colaborando
 
-Por favor, leia o [COLABORACAO.md](https://gist.github.com/usuario/linkParaInfoSobreContribuicoes) para obter detalhes sobre o nosso código de conduta e o processo para nos enviar pedidos de solicitação.
+***
 
 ## 📌 Versão
 
@@ -62,5 +70,5 @@ Nós usamos [Git](https://git-scm.com/) para controle de versão.
 
 ## ✒️ Autores
 
-* **Um desenvolvedor** - *Trabalho Inicial* - [umdesenvolvedor](https://github.com/jmillene)
+* **Jéssica Milene** - *Trabalho Inicial* - (https://github.com/jmillene)
 
