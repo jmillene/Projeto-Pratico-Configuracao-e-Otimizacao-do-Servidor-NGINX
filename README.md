@@ -4,12 +4,12 @@
 
 Configuração e Otimização do Servidor NGINX
 
-Desafio
+## Desafio
 
 Configure e otimize um servidor NGINX para atuar como servidor web, proxy reverso e gateway de API. O projeto deve otimizar o desempenho, implementar HTTPS, configurar regras de proxy reverso e gerenciar servidores web seguros.
 
 
-Etapas
+## Etapas
 
 a. Configuração Básica: Configure o NGINX para atuar como servidor web para um site ou aplicativo.
 
