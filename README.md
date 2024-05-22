@@ -26,10 +26,10 @@ e. Documentação: Documente a configuração e as decisões tomadas durante o p
 
 ### 📋 Pré-requisitos
 
-De que coisas você precisa para instalar o software e como instalá-lo?
+Nesse projeto foi utilizado o esquema de container Docker, devido a sua facilidade de uso e desempenho.
 
-Docker
-Nginx
+* [Nginx](https://www.nginx.com/) - O servidor web usado
+* [Docker](https://www.docker.com/) - Software utilizado
 
 ### 🔧 Instalação
 
@@ -54,7 +54,22 @@ Verifique se o servidor está ativo utilizando seu navegador e acessando localho
 
 ## 📦 Implantação
 
-Adicione notas adicionais sobre como implantar isso em um sistema ativo
+Para implantar o servidor em um sistema ativo, siga as práticas recomendadas de segurança e monitore o desempenho regularmente.
+
+Baseado nos conceitos de servidor e em particular o nginx, foram utilizada os conceitos de proxy reverso, soliciytações HTTP e HTPPs, Balanceamento de carga(load-balancer), e a estrutura de microserviços.
+
+## Nginx :
+
+NGINX é um servidor web open source de alta performance que entrega o conteúdo estático de um site de forma rápida e fácil de configurar. Oferece recursos de balanceamento de cargas, proxy reverso e streaming, além de gerenciar milhares de conexões simultâneas. O resultado disso é maior velocidade e escalabilidade. Além de entregar conteudos estáticos de maneira rapidá e eficiente.
+
+## Proxy Reverso :
+Um proxy reverso é um servidor que fica na frente dos servidores web e encaminha as solicitações do cliente (por exemplo, navegador web) para esses servidores web. Os proxy reversos normalmente são implementados para ajudar a aumentar a segurança, o desempenho e a confiabilidade. Dessa forma ele foi utilizado no projeto afim de quando o lado do cliente envia uma requisição ela não é direcionada no primeiro momento ao servidor, ela passa pelo proxy reverso onde o conteúdo é analisado de acordo com as regras de negócios definidas e depois disso encaminhada a um dos servidores.
+
+![image](https://github.com/jmillene/Projeto-Pratico-Configuracao-e-Otimizacao-do-Servidor-NGINX/assets/18409332/11d82de7-686f-4e65-b072-de29816da60b)
+
+## Solicitações HTTP e HTTPs
+
+
 
 ## 🛠️ Construído com
 
