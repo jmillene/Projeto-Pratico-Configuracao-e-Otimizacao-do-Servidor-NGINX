@@ -43,9 +43,12 @@ Siga estas etapas para configurar o ambiente de desenvolvimento:
 # Subindo container docker
   docker-compose up -d
   sudo apt-get install docker-ce
-´´
-# Você pode verificar se o container está ativo usando o comando:
+```
+
+Você pode verificar se o container está ativo usando o comando:
+```bash
   docker ps
+```
 Esse comando listará todos os containers presentes no Docker.
 Verifique se o servidor está ativo utilizando seu navegador e acessando localhost:porta (digite aqui a porta utilizada).
 
@@ -59,6 +62,7 @@ Adicione notas adicionais sobre como implantar isso em um sistema ativo
 
 * [Nginx](https://www.nginx.com/) - O servidor web usado
 * [Docker](https://www.docker.com/) - Software utilizado
+* [Openssl](https://sadique.io/blog/2012/06/05/managing-security-certificates-from-the-console-on-windows-mac-os-x-and-linux/) - Ferramenta para gerar certificado.
 
 ## 🖇️ Colaborando
 
