@@ -88,6 +88,11 @@ Para simular a segurança de um site, foi utilizado o certificado OpenSSL para g
 Ao gerar um certificado autoassinado e configurá-lo em um projeto, estamos indicando ao cliente que se trata de um site confiável. O TLS, ou "Segurança de Camada de Transporte", e seu antecessor, o SSL, são protocolos usados para envolver o tráfego normal em um pacote protegido e criptografado. Dessa forma, os servidores podem enviar informações com segurança aos seus clientes sem que suas mensagens sejam interceptadas ou lidas por terceiros.
 Para mais informações sobre como gerar o certificado OpenSSL, consulte SSL Dragon.https://www.ssldragon.com/pt/how-to/create-self-signed-certificate-openssl/
 
+## Balanceamento de carga
+
+Quando são feitas requisições ao servidor pelo usuário, entra em cena o proxy reverso, que realiza a distribuição entre os servidores. Ao imaginarmos um cenário onde a quantidade de requisições fosse distribuída igualmente entre um servidor mais potente e outro mais fraco, isso não seria uma boa prática, principalmente em termos de desempenho. É nesse ambiente que entra em contexto o balanceamento de carga.
+O balanceamento de carga nada mais é do que configurar a quantidade de requisições que cada servidor pode receber. Dessa forma, podemos garantir que servidores mais potentes recebam uma maior quantidade de requisições, enquanto servidores menos potentes recebem menos requisições. Isso otimiza o uso dos recursos disponíveis e melhora o desempenho geral do sistema, evitando sobrecargas em servidores menos capacitados e garantindo uma melhor experiência para os usuários.
+
 ## Estrutura do Projeto
 
 Este projeto segue uma arquitetura baseada em microserviços, onde cada funcionalidade é dividida em módulos independentes. A finalidade dessa abordagem é facilitar a manutenção, escalabilidade e desenvolvimento de novas funcionalidades.
@@ -250,10 +255,6 @@ Essa abordagem modular(dividido em pastas) garante que o sistema seja escalável
 * [Nginx](https://www.nginx.com/) - O servidor web usado.
 * [Docker](https://www.docker.com/) - Software utilizado.
 * [Openssl](https://sadique.io/blog/2012/06/05/managing-security-certificates-from-the-console-on-windows-mac-os-x-and-linux/) - Ferramenta para gerar certificado.
-
-## 🖇️ Colaborando
-
-***
 
 ## 📌 Versão
 
