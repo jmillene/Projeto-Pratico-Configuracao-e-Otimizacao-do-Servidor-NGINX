@@ -92,59 +92,6 @@ Para mais informações sobre como gerar o certificado OpenSSL, consulte SSL Dra
 
 Este projeto segue uma arquitetura baseada em microserviços, onde cada funcionalidade é dividida em módulos independentes. A finalidade dessa abordagem é facilitar a manutenção, escalabilidade e desenvolvimento de novas funcionalidades.
 
-- Estrutura de Diretórios
-
-A estrutura do projeto está organizada da seguinte maneira:
-
-├── conf.d
-├── estrutura_projeto.txt
-├── html
-│   ├── erro
-│   │   ├── index.css
-│   │   ├── index.html
-│   │   └── index.js
-│   ├── index.html
-│   └── teste
-│       └── index.html
-├── index.html
-├── load-balancer.conf
-├── mime.types
-├── nginx.conf
-├── noticias.conf
-├── novidades.conf
-└── servidores
-    └── microservicos
-        ├── html
-        │   └── index.html
-        ├── noticias
-        │   ├── html
-        │   │   ├── erro
-        │   │   │   ├── index.css
-        │   │   │   ├── index.html
-        │   │   │   └── index.js
-        │   │   ├── index.html
-        │   │   └── teste
-        │   │       └── index.html
-        │   └── index.html
-        ├── noticias.conf
-        ├── novidades
-        │   ├── html
-        │   │   ├── erro
-        │   │   │   ├── index.css
-        │   │   │   ├── index.html
-        │   │   │   └── index.js
-        │   │   ├── index.html
-        │   │   └── teste
-        │   │       └── index.html
-        │   └── index.html
-        └── novidades.conf
-
-# Documentação do Projeto
-
-## Estrutura do Projeto
-
-Este projeto segue uma arquitetura baseada em microserviços, onde cada funcionalidade é dividida em módulos independentes. A finalidade dessa abordagem é facilitar a manutenção, escalabilidade e desenvolvimento de novas funcionalidades.
-
 ### Estrutura de Diretórios
 
 A estrutura do projeto está organizada da seguinte maneira:
