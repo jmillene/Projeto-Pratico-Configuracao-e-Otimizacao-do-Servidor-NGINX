@@ -88,6 +88,215 @@ Para simular a segurança de um site, foi utilizado o certificado OpenSSL para g
 Ao gerar um certificado autoassinado e configurá-lo em um projeto, estamos indicando ao cliente que se trata de um site confiável. O TLS, ou "Segurança de Camada de Transporte", e seu antecessor, o SSL, são protocolos usados para envolver o tráfego normal em um pacote protegido e criptografado. Dessa forma, os servidores podem enviar informações com segurança aos seus clientes sem que suas mensagens sejam interceptadas ou lidas por terceiros.
 Para mais informações sobre como gerar o certificado OpenSSL, consulte SSL Dragon.https://www.ssldragon.com/pt/how-to/create-self-signed-certificate-openssl/
 
+## Estrutura do Projeto
+
+Este projeto segue uma arquitetura baseada em microserviços, onde cada funcionalidade é dividida em módulos independentes. A finalidade dessa abordagem é facilitar a manutenção, escalabilidade e desenvolvimento de novas funcionalidades.
+
+- Estrutura de Diretórios
+
+A estrutura do projeto está organizada da seguinte maneira:
+
+├── conf.d
+├── estrutura_projeto.txt
+├── html
+│   ├── erro
+│   │   ├── index.css
+│   │   ├── index.html
+│   │   └── index.js
+│   ├── index.html
+│   └── teste
+│       └── index.html
+├── index.html
+├── load-balancer.conf
+├── mime.types
+├── nginx.conf
+├── noticias.conf
+├── novidades.conf
+└── servidores
+    └── microservicos
+        ├── html
+        │   └── index.html
+        ├── noticias
+        │   ├── html
+        │   │   ├── erro
+        │   │   │   ├── index.css
+        │   │   │   ├── index.html
+        │   │   │   └── index.js
+        │   │   ├── index.html
+        │   │   └── teste
+        │   │       └── index.html
+        │   └── index.html
+        ├── noticias.conf
+        ├── novidades
+        │   ├── html
+        │   │   ├── erro
+        │   │   │   ├── index.css
+        │   │   │   ├── index.html
+        │   │   │   └── index.js
+        │   │   ├── index.html
+        │   │   └── teste
+        │   │       └── index.html
+        │   └── index.html
+        └── novidades.conf
+
+# Documentação do Projeto
+
+## Estrutura do Projeto
+
+Este projeto segue uma arquitetura baseada em microserviços, onde cada funcionalidade é dividida em módulos independentes. A finalidade dessa abordagem é facilitar a manutenção, escalabilidade e desenvolvimento de novas funcionalidades.
+
+### Estrutura de Diretórios
+
+A estrutura do projeto está organizada da seguinte maneira:
+
+```
+├── conf.d
+├── estrutura_projeto.txt
+├── html
+│   ├── erro
+│   │   ├── index.css
+│   │   ├── index.html
+│   │   └── index.js
+│   ├── index.html
+│   └── teste
+│       └── index.html
+├── index.html
+├── load-balancer.conf
+├── mime.types
+├── nginx.conf
+├── noticias.conf
+├── novidades.conf
+└── servidores
+    └── microservicos
+        ├── html
+        │   └── index.html
+        ├── noticias
+        │   ├── html
+        │   │   ├── erro
+        │   │   │   ├── index.css
+        │   │   │   ├── index.html
+        │   │   │   └── index.js
+        │   │   ├── index.html
+        │   │   └── teste
+        │   │       └── index.html
+        │   └── index.html
+        ├── noticias.conf
+        ├── novidades
+        │   ├── html
+        │   │   ├── erro
+        │   │   │   ├── index.css
+        │   │   │   ├── index.html
+        │   │   │   └── index.js
+        │   │   ├── index.html
+        │   │   └── teste
+        │   │       └── index.html
+        │   └── index.html
+        └── novidades.conf
+```
+
+### Descrição dos Diretórios e Arquivos
+
+- `conf.d`: Diretório para arquivos de configuração gerais.
+- `estrutura_projeto.txt`: Arquivo de texto contendo a descrição da estrutura do projeto.
+- `html`: Diretório raiz para arquivos HTML.
+  - `erro`: Contém arquivos relacionados a páginas de erro.
+    - `index.css`: Folha de estilo CSS para a página de erro.
+    - `index.html`: Página de erro principal.
+    - `index.js`: Script JavaScript para a página de erro.
+  - `teste`: Contém arquivos HTML para testes.
+    - `index.html`: Página HTML de teste.
+  - `index.html`: Página HTML principal do projeto.
+- `index.html`: Página HTML principal na raiz do projeto.
+- `load-balancer.conf`: Arquivo de configuração do balanceador de carga.
+- `mime.types`: Arquivo de tipos MIME.
+- `nginx.conf`: Arquivo de configuração do servidor Nginx.
+- `noticias.conf`: Arquivo de configuração específico para o microserviço de notícias.
+- `novidades.conf`: Arquivo de configuração específico para o microserviço de novidades.
+- `servidores`: Diretório para servidores e microserviços.
+  - `microservicos`: Diretório contendo os diferentes microserviços.
+    - `html`: Contém a página HTML do microserviço.
+      - `index.html`: Página HTML do microserviço.
+    - `noticias`: Diretório do microserviço de notícias.
+      - `html`: Contém arquivos HTML específicos do microserviço de notícias.
+        - `erro`: Contém arquivos de erro específicos do microserviço de notícias.
+          - `index.css`: Folha de estilo CSS para a página de erro.
+          - `index.html`: Página de erro do microserviço de notícias.
+          - `index.js`: Script JavaScript para a página de erro.
+        - `index.html`: Página HTML principal do microserviço de notícias.
+        - `teste`: Contém arquivos HTML de teste para o microserviço de notícias.
+          - `index.html`: Página HTML de teste do microserviço de notícias.
+      - `index.html`: Página HTML principal do microserviço de notícias.
+      - `noticias.conf`: Arquivo de configuração do microserviço de notícias.
+    - `novidades`: Diretório do microserviço de novidades.
+      - `html`: Contém arquivos HTML específicos do microserviço de novidades.
+        - `erro`: Contém arquivos de erro específicos do microserviço de novidades.
+          - `index.css`: Folha de estilo CSS para a página de erro.
+          - `index.html`: Página de erro do microserviço de novidades.
+          - `index.js`: Script JavaScript para a página de erro.
+        - `index.html`: Página HTML principal do microserviço de novidades.
+        - `teste`: Contém arquivos HTML de teste para o microserviço de novidades.
+          - `index.html`: Página HTML de teste do microserviço de novidades.
+      - `index.html`: Página HTML principal do microserviço de novidades.
+      - `novidades.conf`: Arquivo de configuração do microserviço de novidades.
+
+## Configuração e Deploy
+
+### Configuração
+
+1. **Servidor Nginx**:
+   
+   - Configure o arquivo `nginx.conf` com as definições básicas do servidor.
+   - Inclua os arquivos de configuração dos microserviços (`noticias.conf`, `novidades.conf`) no arquivo principal `nginx.conf` ou no diretório `conf.d`.
+
+3. **Balanceador de Carga**:
+
+   - Configure o arquivo `load-balancer.conf` para definir as regras de balanceamento de carga entre os microserviços.
+
+4. **Tipos MIME**:
+
+   - O arquivo `mime.types` deve ser configurado para suportar todos os tipos de conteúdo que serão servidos pelo servidor.
+
+### Deploy
+
+1. **Estrutura de Diretórios**:
+
+   - Certifique-se de que todos os diretórios e arquivos estão corretamente organizados conforme a estrutura descrita acima.
+
+2. **Configurações dos Microserviços**:
+
+   - Cada microserviço deve ter sua própria configuração (`noticias.conf`, `novidades.conf`) e seus arquivos HTML, CSS e JavaScript devidamente organizados nos diretórios correspondentes.
+
+3. **Iniciar o Servidor**:
+
+   - Utilize os comandos apropriados para iniciar o servidor Nginx e garantir que todas as configurações sejam carregadas corretamente.
+
+### Manutenção
+
+A estrutura modular do projeto facilita a manutenção, permitindo que alterações em um microserviço específico não impactem os outros. Para realizar atualizações ou corrigir bugs, siga estas etapas:
+
+1. **Identificação do Microserviço**:
+
+   - Localize o microserviço que precisa de manutenção na estrutura de diretórios.
+
+2. **Aplicação das Alterações**:
+
+   - Faça as modificações necessárias nos arquivos de configuração ou código fonte do microserviço.
+
+3. **Testes**:
+
+   - Realize testes nos microserviços alterados para garantir que as mudanças não introduziram novos bugs.
+
+4. **Deploy das Alterações**:
+
+   - Após validar as alterações, faça o deploy das mudanças no ambiente de produção.
+
+Essa abordagem modular(dividido em pastas) garante que o sistema seja escalável e fácil de gerenciar, permitindo adicionar novas funcionalidades ou modificar as existentes sem grandes dificuldades.
+
+5. **Observação**
+
+   - Os arquivos HTML foram criados apenas com o objetivo de testar as funcionalidades, por isso possuem apenas textos simples, já que o objetivo do projeto é a configuração do servidor NGINX. Apenas a página de erro está um pouco mais incrementada. O HTML foi elaborada pela codepan, pelo link https://codepen.io/Navedkhan012/pen/vrWQMY. Apenas ajustes básicos foram feitos para que o servidor pudesse ler o arquivo.
+
+
 
 ## 🔧 Ferramentas utilizadas no projeto:
 
