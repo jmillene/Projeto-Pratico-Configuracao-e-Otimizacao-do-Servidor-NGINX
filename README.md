@@ -241,14 +241,14 @@ Essa abordagem modular(dividido em pastas) garante que o sistema seja escalável
 
 5. **Observação**
 
-   - Os arquivos HTML foram criados apenas com o objetivo de testar as funcionalidades, por isso possuem apenas textos simples, já que o objetivo do projeto é a configuração do servidor NGINX. Apenas a página de erro está um pouco mais incrementada. O HTML foi elaborada pela codepan, pelo link https://codepen.io/Navedkhan012/pen/vrWQMY. Apenas ajustes básicos foram feitos para que o servidor pudesse ler o arquivo.
+   - Os arquivos HTML foram criados apenas com o objetivo de testar as funcionalidades, por isso possuem apenas textos simples, já que o objetivo do projeto é a configuração do servidor NGINX. Apenas a página de erro está um pouco mais incrementada. O HTML foi elaborado pela codepan, pelo link https://codepen.io/Navedkhan012/pen/vrWQMY. Apenas ajustes básicos foram feitos para que o servidor pudesse ler o arquivo.
 
 
 
 ## 🔧 Ferramentas utilizadas no projeto:
 
-* [Nginx](https://www.nginx.com/) - O servidor web usado
-* [Docker](https://www.docker.com/) - Software utilizado
+* [Nginx](https://www.nginx.com/) - O servidor web usado.
+* [Docker](https://www.docker.com/) - Software utilizado.
 * [Openssl](https://sadique.io/blog/2012/06/05/managing-security-certificates-from-the-console-on-windows-mac-os-x-and-linux/) - Ferramenta para gerar certificado.
 
 ## 🖇️ Colaborando
